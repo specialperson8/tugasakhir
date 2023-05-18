@@ -1,4 +1,5 @@
-‘FoodHub’ is a complete Food Ordering dynamic website which contains multiple restaurants menus, foods, details, locations and all other information which are directly controlled by different restaurant’s real owner. 
+'FoodHub' adalah situs web dinamis Pemesanan Makanan Catering lengkap yang berisi beberapa menu Tipe Makanan, makanan, detail, lokasi, dan semua informasi lainnya yang dikontrol langsung oleh pemilik asli restoran yang berbeda.
+
 
 Home Page
 ![1](https://user-images.githubusercontent.com/15268903/57193549-334ffd80-6f5e-11e9-8beb-5027dd16803d.jpg)
