@@ -7,9 +7,9 @@
         <li class="{{ ($paginator->currentPage() == $i) ? ' active' : '' }}">
             <a href="{{ $paginator->url($i) }}">{{ $i }}</a>
         </li>
-    @endfor
-    <li class="{{ ($paginator->currentPage() == $paginator->lastPage()) ? ' disabled' : '' }}">
-        <a href="{{ $paginator->url($paginator->currentPage()+1) }}" >Next</a>
-    </li>
+        @endfor
+        <li class="{{ ($paginator->currentPage() == $paginator->lastPage()) ? ' disabled' : '' }}">
+            <a href="{{ $paginator->url($paginator->currentPage()+1) }}">Next</a>
+        </li>
 </ul>
 @endif
