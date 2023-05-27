@@ -18,48 +18,48 @@ Route::get('/', function () {
 use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
-	
+
 	Route::get('/', 'IndexController@index');
-	
+
 	Route::post('login', 'IndexController@postLogin');
 	Route::get('logout', 'IndexController@logout');
-	 
+
 	Route::get('dashboard', 'DashboardController@index');
-	
-	Route::get('profile', 'AdminController@profile');	
-	Route::post('profile', 'AdminController@updateProfile');	
+
+	Route::get('profile', 'AdminController@profile');
+	Route::post('profile', 'AdminController@updateProfile');
 	Route::post('profile_pass', 'AdminController@updatePassword');
-	
-	Route::get('settings', 'SettingsController@settings');	
-	Route::post('settings', 'SettingsController@settingsUpdates');	
-	Route::post('homepage_settings', 'SettingsController@homepage_settings');	
-	Route::post('addthisdisqus', 'SettingsController@addthisdisqus');	
+
+	Route::get('settings', 'SettingsController@settings');
+	Route::post('settings', 'SettingsController@settingsUpdates');
+	Route::post('homepage_settings', 'SettingsController@homepage_settings');
+	Route::post('addthisdisqus', 'SettingsController@addthisdisqus');
 	Route::post('headfootupdate', 'SettingsController@headfootupdate');
 
-	 
-	Route::get('types', 'TypesController@types');	
-	Route::get('types/addtype', 'TypesController@addeditType'); 
-	Route::get('types/addtype/{id}', 'TypesController@editType');	
-	Route::post('types/addtype', 'TypesController@addnew');	
+
+	Route::get('types', 'TypesController@types');
+	Route::get('types/addtype', 'TypesController@addeditType');
+	Route::get('types/addtype/{id}', 'TypesController@editType');
+	Route::post('types/addtype', 'TypesController@addnew');
 	Route::get('types/delete/{id}', 'TypesController@delete');
 
 
-	Route::get('restaurants', 'RestaurantsController@restaurants');	
-	Route::get('restaurants/addrestaurant', 'RestaurantsController@addeditrestaurant'); 
-	Route::get('restaurants/addrestaurant/{id}', 'RestaurantsController@editrestaurant');	
-	Route::post('restaurants/addrestaurant', 'RestaurantsController@addnew');	
+	Route::get('restaurants', 'RestaurantsController@restaurants');
+	Route::get('restaurants/addrestaurant', 'RestaurantsController@addeditrestaurant');
+	Route::get('restaurants/addrestaurant/{id}', 'RestaurantsController@editrestaurant');
+	Route::post('restaurants/addrestaurant', 'RestaurantsController@addnew');
 	Route::get('restaurants/delete/{id}', 'RestaurantsController@delete');
-	Route::get('restaurants/view/{id}', 'RestaurantsController@restaurantview');	
-	
+	Route::get('restaurants/view/{id}', 'RestaurantsController@restaurantview');
+
 	Route::get('restaurants/view/{id}/categories', 'CategoriesController@categories');
-	Route::get('restaurants/view/{id}/categories/addcategory', 'CategoriesController@addeditCategory'); 
-	Route::get('restaurants/view/{id}/categories/addcategory/{cat_id}', 'CategoriesController@editCategory');	
+	Route::get('restaurants/view/{id}/categories/addcategory', 'CategoriesController@addeditCategory');
+	Route::get('restaurants/view/{id}/categories/addcategory/{cat_id}', 'CategoriesController@editCategory');
 	Route::post('restaurants/view/{id}/categories/addcategory', 'CategoriesController@addnew');
-	Route::get('restaurants/view/{id}/categories/delete/{cat_id}', 'CategoriesController@delete'); 
-	
+	Route::get('restaurants/view/{id}/categories/delete/{cat_id}', 'CategoriesController@delete');
+
 	Route::get('restaurants/view/{id}/menu', 'MenuController@menulist');
-	Route::get('restaurants/view/{id}/menu/addmenu', 'MenuController@addeditmenu'); 
-	Route::get('restaurants/view/{id}/menu/addmenu/{menu_id}', 'MenuController@editmenu');	
+	Route::get('restaurants/view/{id}/menu/addmenu', 'MenuController@addeditmenu');
+	Route::get('restaurants/view/{id}/menu/addmenu/{menu_id}', 'MenuController@editmenu');
 	Route::post('restaurants/view/{id}/menu/addmenu', 'MenuController@addnew');
 	Route::get('restaurants/view/{id}/menu/delete/{menu_id}', 'MenuController@delete');
 
@@ -74,17 +74,17 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 	//Owner
 	Route::get('myrestaurants', 'RestaurantsController@my_restaurants');
 
-	Route::get('categories', 'CategoriesController@owner_categories');		
-	Route::get('categories/addcategory', 'CategoriesController@owner_addeditCategory'); 
-	Route::get('categories/addcategory/{cat_id}', 'CategoriesController@editCategory');	
+	Route::get('categories', 'CategoriesController@owner_categories');
+	Route::get('categories/addcategory', 'CategoriesController@owner_addeditCategory');
+	Route::get('categories/addcategory/{cat_id}', 'CategoriesController@editCategory');
 	Route::post('categories/addcategory', 'CategoriesController@addnew');
 	Route::get('categories/delete/{cat_id}', 'CategoriesController@delete');
 
 	Route::get('menu', 'MenuController@owner_menu');
-	Route::get('menu/addmenu', 'MenuController@owner_addeditmenu'); 
-	Route::get('menu/addmenu/{menu_id}', 'MenuController@owner_editmenu');	
+	Route::get('menu/addmenu', 'MenuController@owner_addeditmenu');
+	Route::get('menu/addmenu/{menu_id}', 'MenuController@owner_editmenu');
 	Route::post('menu/addmenu', 'MenuController@addnew');
-	Route::get('menu/delete/{menu_id}', 'MenuController@delete'); 
+	Route::get('menu/delete/{menu_id}', 'MenuController@delete');
 
 	Route::get('orderlist', 'OrderController@owner_orderlist');
 	Route::get('orderlist/{order_id}/{status}', 'OrderController@owner_order_status');
@@ -92,23 +92,22 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 
 	Route::get('reviews', 'RestaurantsController@owner_reviewlist');
 
-	 
 
-	
-	Route::get('users', 'UsersController@userslist');	
-	Route::get('users/adduser', 'UsersController@addeditUser');	
-	Route::post('users/adduser', 'UsersController@addnew');	
-	Route::get('users/adduser/{id}', 'UsersController@editUser');	
-	Route::get('users/delete/{id}', 'UsersController@delete');	
-	
-	Route::get('widgets', 'WidgetsController@index');	
+
+
+	Route::get('users', 'UsersController@userslist');
+	Route::get('users/adduser', 'UsersController@addeditUser');
+	Route::post('users/adduser', 'UsersController@addnew');
+	Route::get('users/adduser/{id}', 'UsersController@editUser');
+	Route::get('users/delete/{id}', 'UsersController@delete');
+
+	Route::get('widgets', 'WidgetsController@index');
 	Route::post('footer_widgets', 'WidgetsController@footer_widgets');
-	Route::post('about_widgets', 'WidgetsController@about_widgets');	
-	Route::post('socialmedialink', 'WidgetsController@socialmedialink');	
-	Route::post('need_help', 'WidgetsController@need_help');	
-	Route::post('featuredpost', 'WidgetsController@featuredpost');	
+	Route::post('about_widgets', 'WidgetsController@about_widgets');
+	Route::post('socialmedialink', 'WidgetsController@socialmedialink');
+	Route::post('need_help', 'WidgetsController@need_help');
+	Route::post('featuredpost', 'WidgetsController@featuredpost');
 	Route::post('advertise', 'WidgetsController@advertise');
-	
 });
 
 Route::get('/', 'IndexController@index');

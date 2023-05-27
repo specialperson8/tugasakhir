@@ -1,6 +1,6 @@
 <div class="col-md-3">
   <div id="cart_box">
-    <h3>Your order <i class="icon_cart_alt pull-right"></i></h3>
+    <h3>Pesanan Kamu<i class="icon_cart_alt pull-right"></i></h3>
 
     <table class="table table_summary">
       <tbody>
@@ -29,10 +29,10 @@
       </tbody>
     </table>
     <hr>
-    <a class="btn_full" href="cart.html">Order now</a>
+    <a class="btn_full" href="cart.html">Pembayaran</a>
   </div>
   @else
-  <a class="btn_full" href="#">Empty Cart</a>
+  <a class="btn_full" href="#">Pesanan Kosong</a>
 </div>
 @endif
 <!-- End cart_box -->
