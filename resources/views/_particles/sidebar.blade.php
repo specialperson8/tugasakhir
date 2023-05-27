@@ -35,7 +35,7 @@
     @endif
   </div>
 
-  <div id="cart_box" class="categories">
+  <!-- <div id="cart_box" class="categories">
     <h3>Kategori</h3>
 
     <ul>
@@ -49,7 +49,7 @@
       @endforeach
 
     </ul>
-  </div>
+  </div> -->
 
 
   <div id="help" class="box_style_2">
