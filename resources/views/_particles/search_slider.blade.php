@@ -5,7 +5,7 @@
         <h1>Pesan Makananmu Sekarang!</h1>
         <div class="container-4">
           {!! Form::open(array('url' => 'restaurants/search','class'=>'','id'=>'search','role'=>'form')) !!}
-          <input type="search" placeholder="Cari Menu Makanan Untukmu ..." name="search_keyword" id="search">
+          <input type="search" placeholder="Cari Menu Makanan Kesukaanmu ..." name="search_keyword" id="search">
           <button class="icon" type="submit"><i class="fa fa-search"></i></button>
           {!! Form::close() !!}
         </div>
@@ -14,7 +14,7 @@
     <div class="hidden-xs" id="count">
       <ul>
         <li><span class="number">{{getcong('total_restaurant')}}</span> Menu Makanan</li>
-        <li><span class="number">{{getcong('total_people_served')}}</span> Pemesan</li>
+        <li><span class="number">{{getcong('total_people_served')}}</span> Pesanan</li>
         <li><span class="number">{{getcong('total_registered_users')}}</span> Pelanggan</li>
       </ul>
     </div>
