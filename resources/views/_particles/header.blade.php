@@ -2,6 +2,11 @@
     <div class="container">
         <div class="logo"> <a href="{{ URL::to('/') }}"><img src="{{ URL::asset('upload/' . getcong('site_logo')) }}" alt=""></a> </div>
         <nav class="animenu">
+            <button class="animenu_toggle">
+                <span class="animenu_toggle_bar"></span>
+                <span class="animenu_toggle_bar"></span>
+                <span class="animenu_toggle_bar"></span>
+            </button>
             <ul class="animenu_nav">
                 <li> <a href="{{ URL::to('/') }}">Beranda</a></li>
                 <li><a href="{{ URL::to('restaurants') }}">Menu Makanan</a></li>
