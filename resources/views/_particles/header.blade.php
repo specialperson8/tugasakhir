@@ -35,8 +35,8 @@
                     </ul>
                 </li>
                 @else
-                <li><a href="{{ URL::to('about') }}">Tentang Kami</a></li>
-                <li><a href="{{ URL::to('contact') }}">Kontak</a></li>
+                <!-- <li><a href="{{ URL::to('about') }}">Tentang Kami</a></li>
+                <li><a href="{{ URL::to('contact') }}">Kontak</a></li> -->
                 @endif
                 <li><a href="{{ URL::to('login') }}">Masuk</a></li>
                 <li><a href="{{ URL::to('register') }}">Daftar</a></li>

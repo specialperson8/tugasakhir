@@ -7,7 +7,7 @@
 
 <div id="blog_item">
   <div class="container">
-    <h1 class="mb5 zui-highlight">Choose one to start building your order</h1>
+    <h1 class="mb5 zui-highlight">Tersedia berbagai menu untuk kebutuhanmu</h1>
 
     <nav id="list_shortcuts">
       <ul>
@@ -24,7 +24,7 @@
 <div class="white_bg">
   <div class="container margin_60">
     <div class="main_title">
-      <h2 class="nomargin_top">Choose from Most Popular</h2>
+      <h2 class="nomargin_top">Menu terlaris kami</h2>
     </div>
     <div class="row">
       @foreach($restaurants as $i => $restaurant)
