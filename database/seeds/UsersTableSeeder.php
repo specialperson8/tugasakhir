@@ -30,10 +30,10 @@ class UsersTableSeeder extends Seeder
         
         DB::table('widgets')->insert([
             'footer_widget1_title' => 'Tentang Kami',
-            'footer_widget1_desc' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            'footer_widget2_title' => '',
-            'footer_widget2_desc' => '',
-            'footer_widget3_title' => 'Kontak',
+            'footer_widget1_desc' => 'Dapur Bunda adalah sebuah jasa catering yang menyiapkan makanan khas Sidoarjo, dengan menu-menu pilihan yang dibuat oleh koki profesional. berdiri sejak 2018 berlokasi di Buduran, Sidarjo',
+            'footer_widget2_title' => 'Bermitra Dengan',
+            'footer_widget2_desc' => 'Dispenduk Jawa Timur, Kantin Politeknik Negeri Jember, Kemendikbudristek Sidoarjo, SMKN 1 Taman, SMP Al - Azhar Sepanjang, Pondok Pesantren Lirboyo Kediri',
+            'footer_widget3_title' => 'Info Lebih Lanjut',
             'footer_widget3_address' => 'Jl. Sekolahan No.1 RT.01 RW.05 Buduran, Sidoarjo, Jawa Timur - Indonesia',
             'footer_widget3_phone' => '085895645840',
             'footer_widget3_email' => 'dapurbunda@gmail.com',
