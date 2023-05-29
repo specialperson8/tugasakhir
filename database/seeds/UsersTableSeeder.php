@@ -18,8 +18,8 @@ class UsersTableSeeder extends Seeder
         // Create admin account
         DB::table('users')->insert([
             'usertype' => 'Admin',
-            'first_name' => 'John',
-            'last_name' => 'Deo',            
+            'first_name' => 'Marz',
+            'last_name' => 'Zuki',            
             'email' => 'admin@admin.com',
             'password' => bcrypt('admin'),
             'image_icon' => 'admin',
@@ -29,30 +29,30 @@ class UsersTableSeeder extends Seeder
         ]);
         
         DB::table('widgets')->insert([
-            'footer_widget1_title' => 'About Restaurant',
+            'footer_widget1_title' => 'Tentang Kami',
             'footer_widget1_desc' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            'footer_widget2_title' => 'Recent Tweets',
+            'footer_widget2_title' => '',
             'footer_widget2_desc' => '',
-            'footer_widget3_title' => 'Contact Info',
-            'footer_widget3_address' => 'Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing',
-            'footer_widget3_phone' => '+01 123 456 78',
-            'footer_widget3_email' => 'demo@example.com',
-            'about_title' => 'About Us',
+            'footer_widget3_title' => 'Kontak',
+            'footer_widget3_address' => 'Jl. Sekolahan No.1 RT.01 RW.05 Buduran, Sidoarjo, Jawa Timur - Indonesia',
+            'footer_widget3_phone' => '085895645840',
+            'footer_widget3_email' => 'dapurbunda@gmail.com',
+            'about_title' => 'Tentang Kami',
             'about_desc' => 'Aenean ultricies mi vitae est. Mauris placerat eleifend leosit amet est.',
-            'need_help_title' => 'Need Help?',
-            'need_help_phone' => '+61 3 8376 6284',
-            'need_help_time' => 'Monday to Friday 9.00am - 7.30pm'
+            'need_help_title' => 'Hubungi Kami',
+            'need_help_phone' => '085895645840',
+            'need_help_time' => 'Jam Operasional : 08.00 - 15.00 WIB'
              
         ]);
         
         DB::table('settings')->insert([            
-            'site_name' => 'Viavi Food Delivery',
-            'currency_symbol' => '$',
-            'site_email' => 'admin@admin.com',
+            'site_name' => 'Dapur Bunda',
+            'currency_symbol' => 'Rp',
+            'site_email' => 'dapurbunda@gmail.com',
             'site_logo' => 'logo.png',
             'site_favicon' => 'favicon.png',
             'site_description' => 'Viavi - Food Delivery Script Viavi - Food Delivery is an laravel script for Delivery Restaurants',
-            'site_copyright' => 'Copyright © 2016 Viavi - Food Delivery Script. All Rights Reserved.',
+            'site_copyright' => 'Copyright © 2023 Dapur Bunda - Catering Script. All Rights Reserved.',
             'home_slide_image1' => 'home_slide_image1.png',
             'home_slide_image2' => 'home_slide_image2.png',
             'home_slide_image3' => 'home_slide_image3.png',
@@ -63,32 +63,32 @@ class UsersTableSeeder extends Seeder
         ]);
          
         DB::table('restaurant_types')->insert([
-            'type' => 'American',
+            'type' => 'Nasi Korea',
             'type_image' => 'American_1458535213'
         ]);
         
         DB::table('restaurant_types')->insert([
-            'type' => 'Chinese',
+            'type' => 'Tumpeng',
             'type_image' => 'Chinese_1458535609'
         ]);
 
         DB::table('restaurant_types')->insert([
-            'type' => 'Indian',
+            'type' => 'Mie Ayam',
             'type_image' => 'Indian_1458535662'   
         ]);
 
         DB::table('restaurant_types')->insert([
-            'type' => 'Mexican',
+            'type' => 'Nasi Kuning',
             'type_image' => 'Mexican_1458535796'
         ]);
 
         DB::table('restaurant_types')->insert([
-            'type' => 'Pizza',
+            'type' => 'Ayam Bakar',
             'type_image' => 'Sushi_1458535621'
         ]);
 
         DB::table('restaurant_types')->insert([
-            'type' => 'Sushi',
+            'type' => 'Dimsum',
             'type_image' => 'Thai_1458535292'
         ]); 
         
