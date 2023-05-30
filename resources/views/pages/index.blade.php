@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="white_bg">
+<!-- <div class="white_bg">
   <div class="container margin_60">
     <div class="main_title">
       <h2 class="nomargin_top">Menu terlaris kami</h2>
@@ -49,12 +49,9 @@
         </a>
       </div>
       @endforeach
-
-
-
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- End section -->
 <!-- End Content =============================================== -->

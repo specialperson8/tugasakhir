@@ -560,7 +560,7 @@ header nav {
 }
 
 .animenu_nav>li:hover>a {
-    color: #1E5128;
+    color: #D8E9A8;
 }
 
 .animenu_nav_child {
@@ -2103,7 +2103,7 @@ ul.opening_list li span {
 }
 
 .find-sec .selected a {
-    background: #4caf50;
+    background: #4E9F3D;
     color: #fff;
     font-size: 12px
 }
@@ -2114,7 +2114,7 @@ ul.opening_list li span {
 }
 
 .find-sec .dropdown-menu a:hover {
-    background: #4caf50;
+    background: #4E9F3D;
     color: #fff;
     font-size: 12px
 }
@@ -2177,7 +2177,7 @@ ul.opening_list li span {
 }
 
 .home-3 .finder h6 {
-    background: #4caf50;
+    background: #4E9F3D;
     display: inline-block;
     width: 100%;
     color: #fff;
@@ -2250,7 +2250,7 @@ ul.opening_list li span {
 }
 
 .home-3 .bnr-property .btn-1:hover {
-    background: #4caf50
+    background: #4E9F3D
 }
 
 .home-3 .bnr-property .tag {
@@ -2464,7 +2464,7 @@ ul.opening_list li span {
 
 .property-slide .sale {
     font-weight: 700;
-    color: #4caf50;
+    color: #4E9F3D;
     font-size: 14px;
     text-transform: uppercase;
     display: inline-block;
@@ -2700,11 +2700,11 @@ ul.opening_list li span {
     text-align: left;
     width: 100%;
     padding: 5px 0;
-    color: #4caf50 !important
+    color: #4E9F3D !important
 }
 
 .fb_more_detail a {
-    color: #4caf50 !important;
+    color: #4E9F3D !important;
     text-decoration: none;
     font-size: 13px !important;
     text-transform: none !important;
@@ -2766,7 +2766,7 @@ ul.opening_list li span {
 }
 
 .detail-sec a:hover {
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .properties li:hover section {
@@ -2823,18 +2823,18 @@ ul.opening_list li span {
 }
 
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-    background: #4caf50
+    background: #4E9F3D
 }
 
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
-    background: #4caf50;
+    background: #4E9F3D;
     color: #fff
 }
 
 .pagination li a {
     display: inline-block;
-    border: 1px solid #4caf50 !important;
-    color: #4caf50;
+    border: 1px solid #4E9F3D !important;
+    color: #4E9F3D;
     font-size: 19px;
     height: 40px;
     width: auto;
@@ -2848,21 +2848,21 @@ ul.opening_list li span {
 }
 
 .pagination li a:hover {
-    background: #4caf50;
+    background: #4E9F3D;
     color: #fff
 }
 
 .load-more {
-    border: 2px solid #4caf50;
+    border: 2px solid #4E9F3D;
     text-transform: uppercase;
     padding: 8px 30px;
-    color: #4caf50;
+    color: #4E9F3D;
     margin-top: 30px;
     display: inline-block
 }
 
 .load-more:hover {
-    background: #4caf50;
+    background: #4E9F3D;
     color: #fff
 }
 
@@ -3374,7 +3374,7 @@ ul.opening_list li span {
     font-weight: 600;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     text-transform: none;
-    color: #4caf50;
+    color: #4E9F3D;
     margin-top: 10px
 }
 
@@ -3398,7 +3398,7 @@ ul.opening_list li span {
 }
 
 .mobile-app h3 {
-    color: #4caf50;
+    color: #4E9F3D;
     text-align: left
 }
 
@@ -3505,23 +3505,23 @@ ul.opening_list li span {
 }
 
 .what-we-do .nav-tabs li a:hover {
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .what-we-do .nav-tabs li a:hover span {
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .what-we-do .nav-tabs li a:hover i {
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .what-we-do .nav-tabs .active a span {
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .what-we-do .nav-tabs .active a i {
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .sidebar-nav.cost-price {
@@ -3601,7 +3601,7 @@ ul.opening_list li span {
     width: 80px;
     background: #fff;
     right: 40%;
-    border: 2px solid #4caf50;
+    border: 2px solid #4E9F3D;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -3625,7 +3625,7 @@ ul.opening_list li span {
     padding: 3px 0;
     text-align: center;
     line-height: 24px;
-    background: #4caf50;
+    background: #4E9F3D;
     font-size: 16px;
     font-weight: 400;
     color: #fff;
@@ -3656,7 +3656,7 @@ ul.opening_list li span {
 
 .services li .heading:hover {
     background: #fff;
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .services li p {
@@ -3683,7 +3683,7 @@ ul.opening_list li span {
 
 .services li:hover .heading {
     background: #fff;
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .welcome {
@@ -4026,7 +4026,7 @@ ul.opening_list li span {
 }
 
 .parthner .owl-dots .active span {
-    background: #4caf50
+    background: #4E9F3D
 }
 
 .sub-banner {
@@ -4061,7 +4061,7 @@ ul.opening_list li span {
 }
 
 .sub-banner .breadcrumb {
-    background: #4caf50;
+    background: #4E9F3D;
     display: inline-block;
     position: relative;
     bottom: 0;
@@ -4516,7 +4516,7 @@ ul.opening_list li span {
     width: 81px;
     height: 4px;
     border: none;
-    background: #4caf50;
+    background: #4E9F3D;
     opacity: 0
 }
 
@@ -4622,7 +4622,7 @@ ul.opening_list li span {
     content: "\f10d";
     font-family: "FontAwesome";
     padding: 0;
-    color: #4caf50;
+    color: #4E9F3D;
     float: left;
     position: absolute;
     font-size: 26px;
@@ -5126,7 +5126,7 @@ ul.opening_list li span {
 }
 
 .restaurant_list_detail .categories li a:hover {
-    color: #4caf50
+    color: #4E9F3D
 }
 
 .restaurant_list_detail .categories h5 {
@@ -5209,7 +5209,7 @@ ul.opening_list li span {
 
 .restaurant_list_detail .side-bar .recent-come li span {
     font-weight: 600;
-    color: #4caf50;
+    color: #4E9F3D;
     font-size: 14px;
     display: inline-block;
     width: 100%
@@ -5268,9 +5268,9 @@ ul.opening_list li span {
 }
 
 .restaurant_list_detail .tags li a:hover {
-    background: #4caf50;
+    background: #4E9F3D;
     color: #fff;
-    border-color: #4caf50
+    border-color: #4E9F3D
 }
 
 .restaurant_list_detail .socil-action li .rss {
@@ -6568,7 +6568,7 @@ ul.opening_list li span {
 }
 
 .contact-info i {
-    color: #4caf50;
+    color: #4E9F3D;
     font-size: 40px;
     margin-bottom: 5px
 }
@@ -6582,7 +6582,7 @@ ul.opening_list li span {
 }
 
 .contact-info a:hover {
-    color: #4caf50;
+    color: #4E9F3D;
     text-decoration: underline !important
 }
 
@@ -7122,7 +7122,7 @@ footer .recent-come li:nth-child(1) {
 
 footer .recent-come li span {
     font-weight: 600;
-    color: #4caf50;
+    color: #4E9F3D;
     font-size: 14px;
     display: inline-block;
     width: 100%
@@ -7135,7 +7135,7 @@ footer .links a:hover {
 footer .subcribe {
     display: inline-block;
     width: 100%;
-    background: #4caf50;
+    background: #4E9F3D;
     padding: 20px 30px;
     margin-bottom: 60px
 }
