@@ -70,7 +70,7 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
-                                <label>Postal code</label>
+                                <label>Kode Pos</label>
                                 <input type="text" id="postal_code" name="postal_code" value="{{ $user->postal_code }}"
                                     class="form-control" placeholder=" Your postal code">
                             </div>
@@ -80,7 +80,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-12">
-                            <label>Your full address</label>
+                            <label>Alamat Lengkap</label>
                             <textarea class="form-control" style="height:150px" placeholder="Address" name="address" id="address">{{ $user->address }}</textarea>
                         </div>
                     </div>
