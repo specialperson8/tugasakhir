@@ -10,7 +10,7 @@
         style="background:url({{ URL::asset('upload/' . getcong('page_bg_image')) }}) no-repeat center top;">
         <div class="overlay">
             <div class="container">
-                <h1>Your Order Details</h1>
+                <h1>Detail Pesanan Anda</h1>
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="col-md-9 col-sm-7 col-xs-12">
                     <div class="box_style_2" id="order_process">
-                        <h2 class="inner">Your Order Details</h2>
+                        <h2 class="inner">Detail Pesanan Anda</h2>
                         {!! Form::open(['url' => 'order_details', 'class' => '', 'id' => 'order_details', 'role' => 'form']) !!}
 
                         <div class="message">
@@ -73,7 +73,7 @@
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
-                                    <label>Postal code</label>
+                                    <label>Kode Pos</label>
                                     <input type="text" id="postal_code" name="postal_code"
                                         value="{{ $user->postal_code }}" class="form-control"
                                         placeholder=" Your postal code">
@@ -95,7 +95,7 @@
                 </div>
                 <div class="col-md-3 col-sm-5 col-xs-12 side-bar">
                     <div id="cart_box">
-                        <h3>Your order <i class="icon_cart_alt pull-right"></i></h3>
+                        <h3>Pesanan Anda <i class="icon_cart_alt pull-right"></i></h3>
 
                         <table class="table table_summary">
                             <tbody>
@@ -130,12 +130,13 @@
                             </table>
                             <hr>
 
-                            <button type="submit" class="btn_full">Confirm Your Order</button>
+                            <button type="submit" class="btn_full">
+                                Konfirmasi pesanan Anda</button>
                     </div>
 
                     {!! Form::close() !!}
                 @else
-                    <a class="btn_full" href="#">Empty Cart</a>
+                    <a class="btn_full" href="#">Pesanan Kosong</a>
                 </div>
                 @endif
                 <!-- End cart_box -->
