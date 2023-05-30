@@ -23,14 +23,14 @@
                     <table class="table table-striped nomargin">
                         <tbody>
                             <tr>
-                                <th>Date</th>
+                                <th>Tanggal</th>
                                 <th>Restaurant</th>
-                                <th>Menu Name</th>
-                                <th>Quantity</th>
-                                <th>Item Price</th>
-                                <th>Total Price</th>
+                                <th>Nama Menu</th>
+                                <th>Kuantitas</th>
+                                <th>Harga Item</th>
+                                <th>Total Harga</th>
                                 <th>Status</th>
-                                <th>Action</th>
+                                <th>Aksi</th>
 
                             </tr>
                             @foreach ($order_list as $order_item)
