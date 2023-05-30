@@ -1,7 +1,7 @@
 <div class="col-md-3 col-sm-5 col-xs-12 side-bar">
 
     <div id="cart_box">
-        <h3>Your order <i class="fa fa-shopping-cart pull-right"></i></h3>
+        <h3>Pesanan Anda <i class="fa fa-shopping-cart pull-right"></i></h3>
         <table class="table table_summary">
             <tbody>
             </tbody>
@@ -33,9 +33,9 @@
                 </tbody>
             </table>
             <hr>
-            <a class="btn_full" href="{{ URL::to('order_details') }}">Order now</a>
+            <a class="btn_full" href="{{ URL::to('order_details') }}">Pembayaran</a>
         @else
-            <a class="btn_full" href="#0">Empty Cart</a>
+            <a class="btn_full" href="#0">Pesanan Kosong</a>
         @endif
     </div>
 
@@ -44,7 +44,7 @@
 
         <ul>
             <li>
-                <label><a href="{{ URL::to('restaurants/') }}">All</a></label>
+                <label><a href="{{ URL::to('restaurants/') }}">Semua</a></label>
             </li>
             @foreach (\App\Types::orderBy('type')->get() as $type)
                 <li>
