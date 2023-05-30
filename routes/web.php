@@ -16,32 +16,36 @@ Route::get('/', function () {
 });*/
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
-	
+	//index homepage
 	Route::get('/', 'IndexController@index');
 	
+	//halaman login/logout
 	Route::post('login', 'IndexController@postLogin');
 	Route::get('logout', 'IndexController@logout');
 	 
+	//dashboard pages
 	Route::get('dashboard', 'DashboardController@index');
 	
+	//dashboard profile admin
 	Route::get('profile', 'AdminController@profile');	
 	Route::post('profile', 'AdminController@updateProfile');	
 	Route::post('profile_pass', 'AdminController@updatePassword');
 	
+	//setting admin controller
 	Route::get('settings', 'SettingsController@settings');	
 	Route::post('settings', 'SettingsController@settingsUpdates');	
 	Route::post('homepage_settings', 'SettingsController@homepage_settings');	
 	Route::post('addthisdisqus', 'SettingsController@addthisdisqus');	
 	Route::post('headfootupdate', 'SettingsController@headfootupdate');
 
-	 
+	 //controller admin type makanan
 	Route::get('types', 'TypesController@types');	
 	Route::get('types/addtype', 'TypesController@addeditType'); 
 	Route::get('types/addtype/{id}', 'TypesController@editType');	
 	Route::post('types/addtype', 'TypesController@addnew');	
 	Route::get('types/delete/{id}', 'TypesController@delete');
 
-
+	//controller admin type restoran
 	Route::get('restaurants', 'RestaurantsController@restaurants');	
 	Route::get('restaurants/addrestaurant', 'RestaurantsController@addeditrestaurant'); 
 	Route::get('restaurants/addrestaurant/{id}', 'RestaurantsController@editrestaurant');	
@@ -67,6 +71,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 
 	Route::get('restaurants/view/{id}/review', 'RestaurantsController@reviewlist');
 
+	//route controller order
 	Route::get('allorder', 'OrderController@alluser_order');
 
 	//Owner
@@ -84,6 +89,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 	Route::post('menu/addmenu', 'MenuController@addnew');
 	Route::get('menu/delete/{menu_id}', 'MenuController@delete'); 
 
+	//route controller order
 	Route::get('orderlist', 'OrderController@owner_orderlist');
 	Route::get('orderlist/{order_id}/{status}', 'OrderController@owner_order_status');
 	Route::get('orderlist/{order_id}', 'OrderController@owner_delete');
