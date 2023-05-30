@@ -37,23 +37,23 @@
                   <li><a href="{{ URL::to('restaurants') }}">Menu Makanan</a></li>
 
                   @if (Auth::check() and Auth::user()->usertype == 'User')
-                      <li> <a href="javascript:void(0);">My Account<i class="icon-down-open-mini"></i></a>
+                      <li> <a href="javascript:void(0);">Akun Saya<i class="icon-down-open-mini"></i></a>
                           <ul class="animenu_nav_child">
                               <li><a href="{{ URL::to('profile') }}">Edit Profile</a></li>
                               <li><a href="{{ URL::to('change_pass') }}">Change Password</a></li>
-                              <li><a href="{{ URL::to('myorder') }}">My Order</a></li>
+                              <li><a href="{{ URL::to('myorder') }}">Pesanan Saya</a></li>
                               <li><a href="{{ URL::to('logout') }}">Logout</a></li>
                           </ul>
                       </li>
                   @elseif(Auth::check() and Auth::user()->usertype == 'Owner')
-                      <li> <a href="javascript:void(0);">My Account<i class="icon-down-open-mini"></i></a>
+                      <li> <a href="javascript:void(0);">Akun Saya<i class="icon-down-open-mini"></i></a>
                           <ul class="animenu_nav_child">
                               <li><a href="{{ URL::to('admin/dashboard') }}">Dashboard</a></li>
                               <li><a href="{{ URL::to('logout') }}">Logout</a></li>
                           </ul>
                       </li>
                   @elseif(Auth::check() and Auth::user()->usertype == 'Admin')
-                      <li> <a href="javascript:void(0);">My Account<i class="icon-down-open-mini"></i></a>
+                      <li> <a href="javascript:void(0);">Akun Saya<i class="icon-down-open-mini"></i></a>
                           <ul class="animenu_nav_child">
                               <li><a href="{{ URL::to('admin/dashboard') }}">Dashboard</a></li>
                               <li><a href="{{ URL::to('logout') }}">Logout</a></li>
@@ -64,8 +64,8 @@
                       <li><a href="{{ URL::to('register') }}">Register</a></li>
                   @endif
 
-                  <li><a href="{{ URL::to('about') }}">About us</a></li>
-                  <li><a href="{{ URL::to('contact') }}">Contact</a></li>
+                  <li><a href="{{ URL::to('about') }}">Tentang Kami</a></li>
+                  <li><a href="{{ URL::to('contact') }}">Kontak</a></li>
               </ul>
 
 
