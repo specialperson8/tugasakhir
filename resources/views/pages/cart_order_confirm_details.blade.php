@@ -10,7 +10,7 @@
         style="background:url({{ URL::asset('upload/' . getcong('page_bg_image')) }}) no-repeat center top;">
         <div class="overlay">
             <div class="container">
-                <h1>Order Confirmed</h1>
+                <h1>Pesanan Dikonfirmasi</h1>
             </div>
         </div>
     </div>
@@ -21,11 +21,11 @@
                 <div class="col-md-3"> </div>
                 <div class="col-md-6">
                     <div class="box_style_2">
-                        <h2 class="inner">Order Confirmed</h2>
+                        <h2 class="inner">Pesanan Dikonfirmasi</h2>
                         <div id="confirm"> <i class="fa fa-check-square-o"></i>
-                            <h3>Thank you!</h3>
+                            <h3>Terima Kasih!</h3>
                         </div>
-                        <h4>Summary</h4>
+                        <h4>Ringkasan</h4>
                         <table class="table table-striped nomargin">
                             <tbody>
                                 @foreach (\App\Cart::where('user_id', Auth::id())->orderBy('id')->get() as $n => $order_item)
@@ -46,7 +46,7 @@
 
                             </tbody>
                         </table>
-                        <a href="{{ URL::to('myorder') }}" class="btn btn-submit">My Order</a>
+                        <a href="{{ URL::to('myorder') }}" class="btn btn-submit">Pesanan Saya</a>
                         <div style="display:none;">{{ \App\Cart::where('user_id', Auth::id())->delete() }}</div>
                     </div>
                 </div>
