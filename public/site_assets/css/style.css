@@ -110,8 +110,8 @@ section {
 }
 
 .btn {
-    background: #50a42f;
-    border: 2px solid #50a42f;
+    background: #1E5128;
+    border: 2px solid #1E5128;
     text-transform: uppercase;
     color: #fff;
     border-radius: 4px;
@@ -129,8 +129,8 @@ section {
 
 .btn:hover {
     background: none;
-    border: 2px solid #50a42f;
-    color: #50a42f;
+    border: 2px solid #1E5128;
+    color: #1E5128;
     transition: all .5s ease 0;
     -webkit-transition: all .5s ease 0;
     -moz-transition: all .5s ease 0
@@ -295,7 +295,7 @@ section {
 }
 
 .fa_icon_bolg {
-    background: #7dbf18 none repeat scroll 0 0;
+    background: #D8E9A8 none repeat scroll 0 0;
     border-radius: 50px;
     color: #fff;
     display: inline-block;
@@ -346,7 +346,7 @@ section {
 }
 
 header {
-    background: rgba(80, 164, 47, 0.98) none repeat scroll 0 0;
+    background: #1E5128 none repeat scroll 0 0;
     display: inline-block;
     position: relative;
     width: 100%;
@@ -560,7 +560,7 @@ header nav {
 }
 
 .animenu_nav>li:hover>a {
-    color: ##53A633
+    color: ##1E5128
 }
 
 .animenu_nav_child {
@@ -607,7 +607,7 @@ header nav {
 .animenu_nav_child a:hover {
     background-color: #f1f2f7;
     border-color: #f1f2f7;
-    color: rgba(80, 164, 47, 0.99)
+    color: #1E5128
 }
 
 @media screen and (max-width: 767px) {
@@ -664,7 +664,7 @@ header nav {
     .animenu_nav a:hover {
         background-color: #fff;
         border-color: #fff;
-        color: #53A633 !important
+        color: #1E5128 !important
     }
 
     .animenu_nav_child {
@@ -733,8 +733,8 @@ header nav {
 }
 
 .rstl_list_btn a {
-    background: #50a42f;
-    border: 2px solid #50a42f;
+    background: #1E5128;
+    border: 2px solid #1E5128;
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
@@ -745,7 +745,7 @@ header nav {
 
 .rstl_list_btn a:hover {
     background: 0 0;
-    border: 2px solid #50a42f;
+    border: 2px solid #1E5128;
     color: #fff;
 }
 
@@ -830,11 +830,11 @@ header nav {
 }
 
 .close:hover {
-    background: #53A633;
+    background: #1E5128;
 }
 
 #confirm i {
-    color: #50a42f;
+    color: #1E5128;
     display: block;
     text-align: center;
     font-size: 120px;
@@ -876,7 +876,7 @@ header nav {
 }
 
 .box_style_2 h2.inner {
-    background-color: #50a42f;
+    background-color: #1E5128;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: #fff;
@@ -900,7 +900,7 @@ header nav {
 }
 
 .btn.btn-submit {
-    background: #50a42f;
+    background: #1E5128;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -916,8 +916,8 @@ header nav {
 
 .btn.btn-submit:hover {
     background: rgba(0, 0, 0, 0);
-    color: #50a42f;
-    border: 2px solid #50a42f;
+    color: #1E5128;
+    border: 2px solid #1E5128;
 }
 
 #banner {
@@ -1036,8 +1036,8 @@ header nav {
 }
 
 #cart_box .btn_full, #cart_box a.btn_full {
-    background: #50a42f;
-    border: 2px solid #50a42f;
+    background: #1E5128;
+    border: 2px solid #1E5128;
     font-size: 16px;
     color: #fff;
     text-align: center;
@@ -1088,8 +1088,8 @@ a.remove_item:hover {
 
 #cart_box .btn_full:hover, #cart_box a.btn_full:hover {
     background: #fff;
-    border: 2px solid #50a42f;
-    color: #50a42f;
+    border: 2px solid #1E5128;
+    color: #1E5128;
 }
 
 .btn_full, a.btn_full {
@@ -1105,13 +1105,13 @@ a.remove_item:hover {
 }
 
 #help.box_style_2 i {
-    color: #50a42f;
+    color: #1E5128;
     display: inline-block;
     font-size: 52px;
 }
 
 #help.box_style_2 a.phone {
-    color: #50a42f;
+    color: #1E5128;
     display: block;
     font-size: 26px;
     margin-bottom: 0;
@@ -1126,7 +1126,7 @@ a.remove_item:hover {
 }
 
 .box_style_2 h2.inner {
-    background-color: #50a42f;
+    background-color: #1E5128;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: #fff;
@@ -1137,7 +1137,7 @@ a.remove_item:hover {
 }
 
 #main_menu h3 {
-    color: #50a42f;
+    color: #1E5128;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1169,7 +1169,7 @@ a.remove_item:hover {
 }
 
 .feature h3 span, a {
-    color: #50a42f;
+    color: #1E5128;
     text-align: center;
 }
 
@@ -1335,7 +1335,7 @@ a.strip_list {
 }
 
 a.strip_list:hover h3 {
-    color: #50a42f;
+    color: #1E5128;
 }
 
 .desc h3 {
@@ -1367,7 +1367,7 @@ a.strip_list {
 }
 
 .desc .opening {
-    color: #50a42f;
+    color: #1E5128;
 }
 
 .desc ul {
@@ -1426,7 +1426,7 @@ a.strip_list {
 }
 
 .container-4 button.icon {
-    background: #53A633;
+    background: #1E5128;
     border: medium none;
     border-bottom-right-radius: 24px;
     border-top-right-radius: 24px;
@@ -1514,7 +1514,7 @@ a.strip_list {
 }
 
 .modal-popup {
-    background: #50a42f none repeat scroll 0 0;
+    background: #1E5128 none repeat scroll 0 0;
     border: medium none;
     border-radius: 50px;
     padding: 1px 30px 10px;
@@ -1722,7 +1722,7 @@ select.form-control.form-white {
 }
 
 #count {
-    background-color: rgba(80, 164, 47, 0.80);
+    background-color: #1E5128;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     bottom: 0;
@@ -1781,8 +1781,8 @@ select.form-control.form-white {
 }
 
 .btn_1, a.btn_1 {
-    background: #50a42f none repeat scroll 0 0;
-    border: 2px solid #50a42f;
+    background: #1E5128 none repeat scroll 0 0;
+    border: 2px solid #1E5128;
     border-radius: 3px;
     display: inline-block;
     font-weight: 600;
@@ -1793,8 +1793,8 @@ select.form-control.form-white {
 
 .btn_1:hover, a.btn_1:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 2px solid #50a42f;
-    color: #50a42f;
+    border: 2px solid #1E5128;
+    color: #1E5128;
 }
 
 #summary_review a.btn_1 {
@@ -2040,7 +2040,7 @@ select.form-control.form-white {
 .nomargin_top i {
     font-size: 16px;
     font-weight: 500;
-    color: #50a42f
+    color: #1E5128
 }
 
 ul.opening_list {
@@ -3011,7 +3011,7 @@ ul.opening_list li span {
 
 .blog_item_lt h2 a:hover {
     text-align: center;
-    color: #4FA22F;
+    color: #1E5128;
     font-size: 20px;
     line-height: 24px;
     text-transform: none
@@ -5192,7 +5192,7 @@ ul.opening_list li span {
 }
 
 .restaurant_list_detail .side-bar .recent-come li a:hover {
-    color: #7dbf18
+    color: #D8E9A8
 }
 
 .restaurant_list_detail .side-bar .recent-come li {
@@ -7222,7 +7222,7 @@ footer .social_icons {
 }
 
 footer .social_icons li {
-    background: #4FA22F;
+    background: #1E5128;
     margin-right: 10px;
     border-radius: 30px;
 }
@@ -7482,7 +7482,7 @@ footer .social_icons a {
 }
 
 .hi-icon-effect-8 .hi-icon {
-    background: #7dbf18 none repeat scroll 0 0;
+    background: #D8E9A8 none repeat scroll 0 0;
     transition: transform 0.1s ease-out 0s, background 0.2s ease 0s;
 }
 
@@ -7512,6 +7512,6 @@ footer .social_icons a {
 
 .hi-icon-effect-8 .hi-icon:hover {
     background: #fff none repeat scroll 0 0;
-    border: 2px solid #7dbf18;
+    border: 2px solid #D8E9A8;
     color: #7dbf18
 }
