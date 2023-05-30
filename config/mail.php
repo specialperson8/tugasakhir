@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'tegaralam387@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Tegar'),
+        'address' => env('MAIL_FROM_ADDRESS', 'e41212380@student.polije.ac.id'),
+        'name' => env('MAIL_FROM_NAME', 'tegar'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'tegaralam387@gmail.com'),
+    'username' => env('MAIL_USERNAME', 'e41212380@student.polije.ac.id'),
 
-    'password' => env('MAIL_PASSWORD', 'dkrqjaiiyroxhgdt'),
+    'password' => env('MAIL_PASSWORD', 'wyayovqlzucvpxbh'),
 
     /*
     |--------------------------------------------------------------------------
