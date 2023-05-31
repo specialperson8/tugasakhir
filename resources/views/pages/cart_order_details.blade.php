@@ -131,7 +131,7 @@
                             <hr>
 
                             <button type="submit" class="btn_full">
-                                Konfirmasi pesanan Anda</button>
+                                Pembayaran</button>
                     </div>
 
                     {!! Form::close() !!}

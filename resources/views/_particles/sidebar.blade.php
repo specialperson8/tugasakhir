@@ -31,7 +31,7 @@
             </tbody>
         </table>
         <hr>
-        <a class="btn_full" href="{{ URL::to('order_details') }}">Pembayaran</a>
+        <a class="btn_full" href="{{ URL::to('order_details') }}">Konfirmasi Pesanan</a>
         @else
         <a class="btn_full" href="#0">Pesanan Kosong</a>
         @endif
