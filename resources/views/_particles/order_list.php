@@ -1,14 +1,14 @@
 <div class="col-md-3">
     <div id="cart_box">
-        <h3>Your order <i class="icon_cart_alt pull-right"></i></h3>
+        <h3>Pesanan Anda<i class="icon_cart_alt pull-right"></i></h3>
 
         <table class="table table_summary">
             <tbody>
                 @foreach(\App\Cart::where('user_id',Auth::id())->orderBy('id')->get() as $n=>$cart_item)
                 <tr>
-                    <td><a href="{{URL::to('delete_item/'.$cart_item->id)}}" class="remove_item"><i
-                                class="icon_minus_alt"></i></a> <strong>{{$cart_item->quantity}}x</strong>
-                        {{$cart_item->item_name}} </td>
+                    <td><a href="{{URL::to('delete_item/'.$cart_item->id)}}" class="remove_item"><i class="icon_minus_alt"></i></a> <strong>{{$cart_item->quantity}}x</strong>
+                        {{$cart_item->item_name}}
+                    </td>
                     <td><strong class="pull-right">{{$cart_item->item_price}}</strong></td>
                 </tr>
                 @endforeach
@@ -31,10 +31,10 @@
             </tbody>
         </table>
         <hr>
-        <a class="btn_full" href="cart.html">Order now</a>
+        <a class="btn_full" href="cart.html">Pembayaran</a>
     </div>
     @else
-    <a class="btn_full" href="#">Empty Cart</a>
+    <a class="btn_full" href="#">Pesanan Kosong</a>
 </div>
 @endif
 <!-- End cart_box -->
