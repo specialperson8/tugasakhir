@@ -12,7 +12,7 @@
     <nav id="list_shortcuts">
       <ul>
         @foreach($types as $type)
-        <li> <a title="Chinese" href="{{URL::to('restaurants/type/'.$type->id)}}" data-cuisine="chinese"> <img alt="{{$type->type}}" src="{{ URL::asset('upload/type/'.$type->type_image.'.jpg') }}"> <span>{{$type->type}}</span> </a> </li>
+        <li> <a title="{{$type->type}}" href="{{URL::to('restaurants/type/'.$type->id)}}" data-cuisine="chinese"> <img alt="{{$type->type}}" src="{{ URL::asset('upload/type/'.$type->type_image.'.jpg') }}"> <span>{{$type->type}}</span> </a> </li>
         @endforeach
       </ul>
     </nav>

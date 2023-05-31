@@ -55,6 +55,6 @@
         <i class="fa fa-life-bouy"></i>
         <h4>{{ getcong_widgets('need_help_title') }}</h4>
         <a href="tel://{{ getcong_widgets('need_help_phone') }}" class="phone">{{ getcong_widgets('need_help_phone') }}</a>
-        <small>{{ getcong_widgets('need_help_time') }}</small>
+        <small>{{!!getcong_widgets('need_help_time')!!}}</small>
     </div>
 </div>

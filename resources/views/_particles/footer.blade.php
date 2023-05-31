@@ -16,7 +16,7 @@
         <li class="col-sm-4">
           <h5>{{getcong_widgets('footer_widget2_title')}}</h5>
           <hr>
-          {!!getcong_widgets('footer_widget2_desc')!!}
+          <p>{!!getcong_widgets('footer_widget2_desc')!!} </p>
         </li>
         <li class="col-sm-4">
           <h5>{{getcong_widgets('footer_widget3_title')}}</h5>
