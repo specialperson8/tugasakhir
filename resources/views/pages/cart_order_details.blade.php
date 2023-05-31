@@ -44,31 +44,31 @@
                         @endif
 
                         <div class="form-group">
-                            <label>First name</label>
+                            <label>Nama Depan</label>
                             <input type="text" class="form-control" id="first_name" name="first_name"
-                                value="{{ $user->first_name }}" placeholder="First name">
+                                value="{{ $user->first_name }}" placeholder="Nama Depan">
                         </div>
                         <div class="form-group">
-                            <label>Last name</label>
+                            <label>Nama Belakang</label>
                             <input type="text" class="form-control" id="last_name" value="{{ $user->last_name }}"
-                                name="last_name" placeholder="Last name">
+                                name="last_name" placeholder="Nama Belakang">
                         </div>
                         <div class="form-group">
-                            <label>No Handphone</label>
+                            <label>No Telepon</label>
                             <input type="text" id="mobile" name="mobile" value="{{ $user->mobile }}"
-                                class="form-control" placeholder="Telephone/mobile">
+                                class="form-control" placeholder="No Telepon">
                         </div>
                         <div class="form-group">
                             <label>Email</label>
                             <input type="email" id="email" name="email" value="{{ $user->email }}"
-                                class="form-control" placeholder="Your email">
+                                class="form-control" placeholder="Email">
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label>Kota</label>
                                     <input type="text" id="city" name="city" value="{{ $user->city }}"
-                                        class="form-control" placeholder="Your city">
+                                        class="form-control" placeholder="Kota">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -76,7 +76,7 @@
                                     <label>Kode Pos</label>
                                     <input type="text" id="postal_code" name="postal_code"
                                         value="{{ $user->postal_code }}" class="form-control"
-                                        placeholder=" Your postal code">
+                                        placeholder="Kode Pos">
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Alamat</label>
-                                <textarea class="form-control" style="height:150px" placeholder="Address" name="address" id="address">{{ $user->address }}</textarea>
+                                <textarea class="form-control" style="height:150px" placeholder="Alamat" name="address" id="address">{{ $user->address }}</textarea>
                             </div>
                         </div>
 
