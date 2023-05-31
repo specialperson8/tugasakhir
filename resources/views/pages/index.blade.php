@@ -21,12 +21,15 @@
   </div>
 </div>
 
-<!-- <div class="white_bg">
+<div class="white_bg">
   <div class="container margin_60">
-    <div class="main_title">
-      <h2 class="nomargin_top">Menu terlaris kami</h2>
+    <div class="main_title column">
+      <h2 class="nomargin_top">Unduh Versi Mobile di Smartphone Anda</h2>
     </div>
-    <div class="row">
+    <div class="download-app pd-1000">
+      <img src="{{ URL::asset('upload/gplay.svg') }}" width="500vh" height="auto" alt="">
+    </div>
+    <!-- <div class="row">
       @foreach($restaurants as $i => $restaurant)
       <div class="col-md-6"> <a class="strip_list" href="{{URL::to('restaurants/menu/'.$restaurant->restaurant_slug)}}">
           <div class="desc">
@@ -49,9 +52,9 @@
         </a>
       </div>
       @endforeach
-    </div>
+    </div> -->
   </div>
-</div> -->
+</div>
 
 <!-- End section -->
 <!-- End Content =============================================== -->
