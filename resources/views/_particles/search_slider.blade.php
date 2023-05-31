@@ -5,7 +5,7 @@
         <h1>Pesan Makanan Anda Sekarang !</h1>
         <div class="container-4">
           {!! Form::open(array('url' => 'restaurants/search','class'=>'','id'=>'search','role'=>'form')) !!}
-          <input type="search" placeholder="Restaurant name or address..." name="search_keyword" id="search">
+          <input type="search" placeholder="Cari Menu Kesukaan Anda..." name="search_keyword" id="search">
           <button class="icon" type="submit"><i class="fa fa-search"></i></button>
           {!! Form::close() !!}
         </div>
