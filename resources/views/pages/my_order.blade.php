@@ -6,65 +6,56 @@
 
 @section('content')
 
-    <div class="sub-banner"
-        style="background:url({{ URL::asset('upload/' . getcong('page_bg_image')) }}) no-repeat center top;">
-        <div class="overlay">
-            <div class="container">
-                <h1>My Orders</h1>
+<div class="sub-banner" style="background:url({{ URL::asset('upload/' . getcong('page_bg_image')) }}) no-repeat center top;">
+    <div class="overlay">
+        <div class="container">
+            <h1>Pesanan Saya</h1>
+        </div>
+    </div>
+</div>
+
+<div class="white_for_login">
+    <div class="container margin_60">
+        <div class="col-md-offset-2 col-md-9">
+            <div class="box_style_2">
+                <h2 class="inner">Detail Pesanan</h2>
+                <table class="table table-striped nomargin">
+                    <tbody>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Menu</th>
+                            <th>Item</th>
+                            <th>Jumlah</th>
+                            <th>Harga Item</th>
+                            <th>Total Harga</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+
+                        </tr>
+                        @foreach ($order_list as $order_item)
+                        <tr>
+                            <td>{{ date('m-d-Y', $order_item->created_date) }}</td>
+                            <td><a href="{{ url('restaurants/' . \App\Restaurants::getRestaurantsInfo($order_item->restaurant_id)->restaurant_slug) }}" class="text-regular">{{ \App\Restaurants::getRestaurantsInfo($order_item->restaurant_id)->restaurant_name }}</a>
+                            </td>
+                            <td>{{ $order_item->item_name }} </td>
+                            <td><strong class="">{{ $order_item->quantity }}</strong></td>
+                            <td><strong class="">{{ getcong('currency_symbol') }}{{ \App\Menu::getMenunfo($order_item->item_id)->price }}.000</strong>
+                            </td>
+                            <td><strong class="">{{ getcong('currency_symbol') }}{{ $order_item->item_price }}.000</strong>
+                            </td>
+                            <td><strong class="">{{ $order_item->status }}</strong></td>
+                            @if ($order_item->status != 'Cancel' and $order_item->status != 'Completed')
+                            <td><a href="{{ URL::to('cancel_order/' . $order_item->id) }}" class=""><strong>Batalkan Pesanan</strong></a></td>
+                            @else
+                            @endif
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                <br>
             </div>
         </div>
     </div>
-
-    <div class="white_for_login">
-        <div class="container margin_60">
-            <div class="col-md-offset-2 col-md-9">
-                <div class="box_style_2">
-                    <h2 class="inner">Order List</h2>
-                    <table class="table table-striped nomargin">
-                        <tbody>
-                            <tr>
-                                <th>Tanggal</th>
-                                <th>Restaurant</th>
-                                <th>Nama Menu</th>
-                                <th>Kuantitas</th>
-                                <th>Harga Item</th>
-                                <th>Total Harga</th>
-                                <th>Status</th>
-                                <th>Aksi</th>
-
-                            </tr>
-                            @foreach ($order_list as $order_item)
-                                <tr>
-                                    <td>{{ date('m-d-Y', $order_item->created_date) }}</td>
-                                    <td><a href="{{ url('restaurants/' . \App\Restaurants::getRestaurantsInfo($order_item->restaurant_id)->restaurant_slug) }}"
-                                            class="text-regular">{{ \App\Restaurants::getRestaurantsInfo($order_item->restaurant_id)->restaurant_name }}</a>
-                                    </td>
-                                    <td>{{ $order_item->item_name }} </td>
-                                    <td><strong class="">{{ $order_item->quantity }}</strong></td>
-                                    <td><strong
-                                            class="">{{ getcong('currency_symbol') }}{{ \App\Menu::getMenunfo($order_item->item_id)->price }}.000</strong>
-                                    </td>
-                                    <td><strong
-                                            class="">{{ getcong('currency_symbol') }}{{ $order_item->item_price }}.000</strong>
-                                    </td>
-                                    <td><strong class="">{{ $order_item->status }}</strong></td>
-                                    @if ($order_item->status != 'Cancel' and $order_item->status != 'Completed')
-                                        <td><a href="{{ URL::to('cancel_order/' . $order_item->id) }}"
-                                                class=""><strong>Cancel</strong></a></td>
-                                    @else
-                                    @endif
-                                </tr>
-                            @endforeach
-
-
-
-                        </tbody>
-                    </table>
-                    <br>
-                </div>
-
-            </div>
-        </div>
-    </div>
+</div>
 
 @endsection

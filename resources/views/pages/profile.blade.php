@@ -8,101 +8,87 @@
 
 
 
-    <!-- Content ================================================== -->
-    <div class="container margin_60">
+<!-- Content ================================================== -->
+<div class="container margin_60">
 
-        <div class="row">
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-6">
-                <div class="box_style_2" id="order_process">
-                    <h2 class="inner">Edit Profile</h2>
-                    {!! Form::open(['url' => 'profile', 'class' => '', 'id' => 'myProfile', 'role' => 'form']) !!}
-
-                    <div class="message">
-                        <!--{!! Html::ul($errors->all(), ['class' => 'alert alert-danger errors']) !!}-->
-                        @if (count($errors) > 0)
-                            <div class="alert alert-danger">
-
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-
-                    </div>
-                    @if (Session::has('flash_message'))
-                        <div class="alert alert-success">
-                            {{ Session::get('flash_message') }}
-                        </div>
-                    @endif
-
-                    <div class="form-group">
-                        <label>First name</label>
-                        <input type="text" class="form-control" id="first_name" name="first_name"
-                            value="{{ $user->first_name }}" placeholder="First name">
-                    </div>
-                    <div class="form-group">
-                        <label>Last name</label>
-                        <input type="text" class="form-control" id="last_name" value="{{ $user->last_name }}"
-                            name="last_name" placeholder="Last name">
-                    </div>
-                    <div class="form-group">
-                        <label>No Handphone</label>
-                        <input type="text" id="mobile" name="mobile" value="{{ $user->mobile }}" class="form-control"
-                            placeholder="Telephone/mobile">
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" id="email" name="email" value="{{ $user->email }}" class="form-control"
-                            placeholder="Your email">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <label>Kota</label>
-                                <input type="text" id="city" name="city" value="{{ $user->city }}"
-                                    class="form-control" placeholder="Your city">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <label>Kode Pos</label>
-                                <input type="text" id="postal_code" name="postal_code" value="{{ $user->postal_code }}"
-                                    class="form-control" placeholder=" Your postal code">
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label>Alamat Lengkap</label>
-                            <textarea class="form-control" style="height:150px" placeholder="Address" name="address" id="address">{{ $user->address }}</textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-submit">Update Profile</button>
-                    {!! Form::close() !!}
-                </div>
-                <!-- End box_style_1 -->
-            </div>
-            <!-- End col-md-6 -->
-
-
-
+    <div class="row">
+        <div class="col-md-3">
 
         </div>
-        <!-- End row -->
+        <div class="col-md-6">
+            <div class="box_style_2" id="order_process">
+                <h2 class="inner">Pengaturan Akun</h2>
+                {!! Form::open(['url' => 'profile', 'class' => '', 'id' => 'myProfile', 'role' => 'form']) !!}
+
+                <div class="message">
+                    <!--{!! Html::ul($errors->all(), ['class' => 'alert alert-danger errors']) !!}-->
+                    @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
+
+                </div>
+                @if (Session::has('flash_message'))
+                <div class="alert alert-success">
+                    {{ Session::get('flash_message') }}
+                </div>
+                @endif
+
+                <div class="form-group">
+                    <label>Nama Depan</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" value="{{ $user->first_name }}" placeholder="Nama Depan">
+                </div>
+                <div class="form-group">
+                    <label>Nama Belakang</label>
+                    <input type="text" class="form-control" id="last_name" value="{{ $user->last_name }}" name="last_name" placeholder="Nama Belakang">
+                </div>
+                <div class="form-group">
+                    <label>No Telepon</label>
+                    <input type="text" id="mobile" name="mobile" value="{{ $user->mobile }}" class="form-control" placeholder="No Telepon">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" value="{{ $user->email }}" class="form-control" placeholder="Email">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label>Kota</label>
+                            <input type="text" id="city" name="city" value="{{ $user->city }}" class="form-control" placeholder="Kota">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label>Kode Pos</label>
+                            <input type="text" id="postal_code" name="postal_code" value="{{ $user->postal_code }}" class="form-control" placeholder="Kode Pos">
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Alamat Lengkap</label>
+                        <textarea class="form-control" style="height:150px" placeholder="Alamat Lengkap" name="address" id="address">{{ $user->address }}</textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-submit">Simpan Perubahan</button>
+                {!! Form::close() !!}
+            </div>
+            <!-- End box_style_1 -->
+        </div>
+        <!-- End col-md-6 -->
     </div>
-    <!-- End white_bg -->
-
-
-
-
-    <!-- End section -->
-    <!-- End Content =============================================== -->
+    <!-- End row -->
+</div>
+<!-- End white_bg -->
+<!-- End section -->
+<!-- End Content =============================================== -->
 
 @endsection

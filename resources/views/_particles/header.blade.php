@@ -34,7 +34,7 @@
                 <li> <a href="javascript:void(0);">Akun Saya<i class="icon-down-open-mini"></i></a>
                     <ul class="animenu_nav_child">
                         <li><a href="{{ URL::to('profile') }}">Pengaturan Akun</a></li>
-                        <li><a href="{{ URL::to('change_pass') }}">Ganti Kata Sandi</a></li>
+                        <li><a href="{{ URL::to('change_pass') }}">Ubah Kata Sandi</a></li>
                         <li><a href="{{ URL::to('myorder') }}">Pesanan Saya</a></li>
                         <li><a href="{{ URL::to('logout') }}">Keluar</a></li>
                     </ul>
@@ -54,11 +54,11 @@
                     </ul>
                 </li>
                 @else
-                <!-- <li><a href="{{ URL::to('about') }}">Tentang Kami</a></li> -->
-                <li><a href="{{ URL::to('contact') }}">Kontak</a></li>
-                @endif
                 <li><a href="{{ URL::to('login') }}">Masuk</a></li>
                 <li><a href="{{ URL::to('register') }}">Daftar</a></li>
+                @endif
+                <li><a href="{{ URL::to('about') }}">Tentang Kami</a></li>
+                <li><a href="{{ URL::to('contact') }}">Kontak</a></li>
             </ul>
         </nav>
     </div>
