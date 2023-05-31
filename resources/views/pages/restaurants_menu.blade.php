@@ -19,7 +19,7 @@
                     <div class="col-md-10 col-sm-9">
                         <h1>{{ $restaurant->restaurant_name }}</h1>
                         <div class="sub_cont_rt">{{ $restaurant->type }}</div>
-                        <div class="sub_cont_lt"><i class="fa fa-map-marker"></i>{{ $restaurant->restaurant_address }}</div>
+                        <div class="sub_cont_lt"></i>{{ $restaurant->restaurant_address }}</div>
                         <div class="rating">
                             @for ($x = 0; $x < 5; $x++)
                                 @if ($x < $restaurant->review_avg)
